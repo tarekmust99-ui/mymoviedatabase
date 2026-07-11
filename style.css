@@ -1,0 +1,167 @@
+body {
+
+    background-color: #050505;
+
+    color: #ff0000;
+
+    font-family: "Courier New", monospace;
+
+    margin: 40px;
+
+}
+
+
+
+.cabecalho {
+
+    color: #ff0000;
+
+}
+
+
+
+pre {
+
+    font-family: "Courier New", monospace;
+
+    font-size: 18px;
+
+}
+
+
+
+
+input {
+
+
+    background-color: #050505;
+
+
+    color: #ff0000;
+
+
+    border: 1px solid #ff0000;
+
+
+    font-family: "Courier New", monospace;
+
+
+    font-size: 18px;
+
+
+    padding: 8px;
+
+
+    width: 350px;
+
+
+
+}
+
+
+
+
+input::placeholder {
+
+
+    color: #660000;
+
+
+}
+
+
+
+
+
+
+.rating-star {
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.rating-star:hover {
+
+
+    text-shadow:
+
+
+    0 0 5px #ff0000,
+
+
+    0 0 10px #ff0000,
+
+
+    0 0 20px #ff0000;
+
+
+
+}
+
+
+
+
+
+.show-all {
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+.show-all:hover {
+
+
+    text-shadow:
+
+
+    0 0 5px #ff0000,
+
+
+    0 0 10px #ff0000;
+
+
+
+}
+
+
+
+
+
+#exportar {
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+
+
+#exportar:hover {
+
+
+    text-shadow:
+
+
+    0 0 5px #ff0000,
+
+
+    0 0 10px #ff0000;
+
+
+
+}
