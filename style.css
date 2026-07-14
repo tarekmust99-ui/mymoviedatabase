@@ -407,4 +407,30 @@ span,
     cursor: pointer;
 
 }
+/* ================================= */
+/* AJUSTAR BARRA DE PESQUISA NO CELULAR */
+/* ================================= */
+
+
+input {
+
+    box-sizing: border-box;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    input {
+
+        width: 100%;
+
+        max-width: 100%;
+
+    }
+
+
+}
 }
