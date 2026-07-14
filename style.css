@@ -11,7 +11,8 @@ body {
 }
 
 
-/* controla a largura geral do site */
+
+/* controla o tamanho geral */
 
 .container {
 
@@ -23,21 +24,29 @@ body {
 
 
 
-/* cabeçalho */
+/* TITULO DO SITE */
 
 .cabecalho {
 
     color: #ff0000;
 
+    font-family: "OCR A Extended", "Courier New", monospace;
+
     font-size: 20px;
 
     line-height: 1.2;
+
+    text-shadow:
+
+    3px 3px 0 #800000,
+
+    6px 6px 0 #400000;
 
 }
 
 
 
-/* todos os textos */
+/* textos do banco */
 
 pre {
 
@@ -51,25 +60,34 @@ pre {
 
 
 
-/* campo de pesquisa */
+/* caixa de pesquisa */
 
 input {
 
+
     background-color: #050505;
+
 
     color: #ff0000;
 
+
     border: 1px solid #ff0000;
+
 
     font-family: "Courier New", monospace;
 
+
     font-size: 16px;
+
 
     padding: 8px;
 
+
     width: 350px;
 
+
     max-width: 90%;
+
 
 }
 
@@ -77,13 +95,15 @@ input {
 
 input::placeholder {
 
+
     color: #660000;
+
 
 }
 
 
 
-/* estrelas */
+/* estrelas de avaliação */
 
 .rating-star {
 
@@ -92,12 +112,21 @@ input::placeholder {
 }
 
 
+
 .rating-star:hover {
 
+
     text-shadow:
+
+
     0 0 5px #ff0000,
+
+
     0 0 10px #ff0000,
+
+
     0 0 20px #ff0000;
+
 
 }
 
@@ -112,17 +141,24 @@ input::placeholder {
 }
 
 
+
 .show-all:hover {
 
+
     text-shadow:
+
+
     0 0 5px #ff0000,
+
+
     0 0 10px #ff0000;
+
 
 }
 
 
 
-/* exportar */
+/* exportar banco */
 
 #exportar {
 
@@ -131,23 +167,111 @@ input::placeholder {
 }
 
 
+
 #exportar:hover {
 
+
     text-shadow:
+
+
     0 0 5px #ff0000,
+
+
     0 0 10px #ff0000;
+
 
 }
 
 
 
-/* celular */
+/* ANIMAÇÃO DO BANNER - TREMEDEIRA */
+
+.banner:hover {
+
+
+    animation: terremoto 0.25s infinite;
+
+
+}
+
+
+
+@keyframes terremoto {
+
+
+    0% {
+
+        transform: translate(0);
+
+    }
+
+
+    25% {
+
+        transform: translate(-5px, 2px);
+
+    }
+
+
+    50% {
+
+        transform: translate(5px, -2px);
+
+    }
+
+
+    75% {
+
+        transform: translate(-5px, -2px);
+
+    }
+
+
+    100% {
+
+        transform: translate(0);
+
+    }
+
+
+}
+
+
+
+/* GIF DO GATO */
+
+.gato {
+
+
+    display: block;
+
+    max-height: 120px;
+
+    width: auto;
+
+}
+
+
+
+/* CELULAR */
 
 @media(max-width:600px){
+
 
     body {
 
         margin: 10px;
+
+    }
+
+
+    .cabecalho {
+
+        font-size: 14px;
+
+        text-shadow:
+
+        2px 2px 0 #800000;
 
     }
 
@@ -159,10 +283,11 @@ input::placeholder {
     }
 
 
-    .cabecalho {
+    input {
 
-        font-size: 14px;
+        width: 90%;
 
     }
+
 
 }
