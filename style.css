@@ -118,12 +118,14 @@ input::placeholder{
     transition:.2s;
 }
 
-.rating-star:hover{
+.rating-star:hover,
+.rating-star:active{
 
     text-shadow:
         0 0 5px #ff0000,
         0 0 10px #ff0000,
-        0 0 20px #ff0000;
+        0 0 20px #ff0000,
+        0 0 30px #ff0000;
 }
 
 /* ===========================
@@ -136,12 +138,17 @@ input::placeholder{
 }
 
 #exportar:hover,
-.show-all:hover{
+.show-all:hover,
+#exportar:active,
+.show-all:active{
 
     text-shadow:
         0 0 5px #ff0000,
         0 0 10px #ff0000,
-        0 0 20px #ff0000;
+        0 0 20px #ff0000,
+        0 0 30px #ff0000;
+
+    transform: scale(1.05);
 }
 
 button,
@@ -183,29 +190,7 @@ a,
     width:90%;
     max-width:320px;
  }
-}
 
-/* Remove hover preso no celular */
-
-@media (hover:none) and (pointer:coarse){
-
-    #exportar:hover,
-    .show-all:hover,
-    .rating-star:hover{
-        text-shadow:none;
-    }
-
-    #exportar:active,
-    .show-all:active,
-    .rating-star:active{
-
-        text-shadow:
-            0 0 8px #ff0000,
-            0 0 18px #ff0000,
-            0 0 30px #ff0000,
-            0 0 45px #ff0000;
-
-    }
        }
 
 
