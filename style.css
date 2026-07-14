@@ -12,7 +12,7 @@ body {
 /* BANNER */
 /* ========================= */
 
-.banner{
+.banner {
 
     position:relative;
     display:inline-block;
@@ -23,7 +23,7 @@ body {
 
     box-shadow:
     0 0 10px rgba(255,0,0,.35),
-    0 0 30px rgba(255,0,0,.20);
+    0 0 25px rgba(255,0,0,.20);
 
     margin-bottom:35px;
 
@@ -32,52 +32,61 @@ body {
 }
 
 
-.banner:hover{
+.banner:hover {
 
     box-shadow:
     0 0 15px #ff0000,
-    0 0 40px rgba(255,0,0,.5);
+    0 0 40px rgba(255,0,0,.45);
 
 }
 
 
 
-.cabecalho{
+.cabecalho {
 
     color:#ff0000;
+
     margin:0;
 
 }
 
 
 
-/* ASCII */
+/* ========================= */
+/* ASCII DO BANNER */
+/* ========================= */
 
-pre{
+
+pre {
 
     font-family:"Courier New", monospace;
 
-    font-size:12px;
+    font-size:10px;
 
     line-height:1;
+
+    margin:0;
 
 }
 
 
 
+/* ========================= */
 /* GATO */
+/* ========================= */
 
-.banner-gif{
+
+.banner-gif {
 
     position:absolute;
 
-    right:-130px;
+    right:-140px;
 
     top:50%;
 
     transform:translateY(-50%);
 
-    height:260px;
+    height:280px;
 
     width:auto;
 
@@ -92,24 +101,24 @@ pre{
 
 
 
-@keyframes catFloat{
+@keyframes catFloat {
 
 
-0%{
+0% {
 
 transform:translateY(-50%) translateX(0);
 
 }
 
 
-50%{
+50% {
 
 transform:translateY(calc(-50% - 8px)) translateX(5px);
 
 }
 
 
-100%{
+100% {
 
 transform:translateY(-50%) translateX(0);
 
@@ -120,124 +129,133 @@ transform:translateY(-50%) translateX(0);
 
 
 
-
-input{
-
-
-background-color:#050505;
-
-color:#ff0000;
-
-border:1px solid #ff0000;
-
-font-family:"Courier New", monospace;
-
-font-size:18px;
-
-padding:8px;
-
-width:350px;
+/* ========================= */
+/* INPUT */
+/* ========================= */
 
 
-}
+input {
 
+    background-color:#050505;
 
-input::placeholder{
+    color:#ff0000;
 
-color:#660000;
+    border:1px solid #ff0000;
+
+    font-family:"Courier New", monospace;
+
+    font-size:18px;
+
+    padding:8px;
+
+    width:350px;
 
 }
 
 
+input::placeholder {
 
-.rating-star{
-
-cursor:pointer;
+    color:#660000;
 
 }
 
 
 
-.rating-star:hover{
+/* ========================= */
+/* EFEITOS */
+/* ========================= */
 
-text-shadow:
-0 0 5px #ff0000,
-0 0 10px #ff0000,
-0 0 20px #ff0000;
+
+.rating-star {
+
+    cursor:pointer;
+
+}
+
+
+.rating-star:hover {
+
+    text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000,
+    0 0 20px #ff0000;
 
 }
 
 
 
-.show-all{
+.show-all {
 
-cursor:pointer;
-
-}
-
-
-.show-all:hover{
-
-text-shadow:
-0 0 5px #ff0000,
-0 0 10px #ff0000;
+    cursor:pointer;
 
 }
 
 
+.show-all:hover {
 
-#exportar{
-
-cursor:pointer;
-
-}
-
-
-#exportar:hover{
-
-text-shadow:
-0 0 5px #ff0000,
-0 0 10px #ff0000;
+    text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000;
 
 }
 
 
+
+#exportar {
+
+    cursor:pointer;
+
+}
+
+
+#exportar:hover {
+
+    text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000;
+
+}
+
+
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
 
 
 @media(max-width:700px){
 
 
-body{
+body {
 
-margin:15px;
+    margin:15px;
+
+}
+
+
+.banner {
+
+    display:block;
+
+    padding-bottom:130px;
 
 }
 
 
 
-.banner{
+.banner-gif {
 
-display:block;
+    right:10px;
 
-padding-bottom:120px;
-
-}
-
-
-
-.banner-gif{
-
-right:20px;
-
-height:160px;
+    height:170px;
 
 }
 
 
 
-pre{
+pre {
 
-font-size:7px;
+    font-size:6px;
 
 }
 
