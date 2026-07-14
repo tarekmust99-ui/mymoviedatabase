@@ -170,11 +170,23 @@ padding-bottom:90px;
 
 .banner-gif{
 
-height:90px;
-right:10px;
-bottom:-15px;
-top:auto;
-transform:none;
+    position:absolute;
+
+    right:10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    height:130px;
+
+    width:auto;
+
+    z-index:999;
+
+    filter:drop-shadow(0 0 15px rgba(255,0,0,.6));
+
+    animation:catFloat 3s ease-in-out infinite;
 
 }
 
