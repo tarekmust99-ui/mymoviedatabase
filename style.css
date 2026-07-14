@@ -474,4 +474,118 @@ input {
 
 }
 
+
+/* ================================= */
+/* BANNER MAIOR */
+/* ================================= */
+
+
+.cabecalho {
+
+    min-height: 280px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 50px 20px;
+
+    font-size: 22px;
+
+    color: #ff0000;
+
+    border: 2px solid #ff0000;
+
+}
+
+
+
+/* ================================= */
+/* TEXTO DO CABEÇALHO PISCANDO */
+/* ================================= */
+
+
+.cabecalho {
+
+    animation: piscarBanner 1.5s infinite;
+
+}
+
+
+
+@keyframes piscarBanner {
+
+
+    0% {
+
+        opacity: 1;
+
+        text-shadow:
+
+        0 0 5px #ff0000,
+
+        0 0 15px #ff0000;
+
+    }
+
+
+    50% {
+
+        opacity: 0.4;
+
+        text-shadow: none;
+
+    }
+
+
+    100% {
+
+        opacity: 1;
+
+        text-shadow:
+
+        0 0 5px #ff0000,
+
+        0 0 15px #ff0000;
+
+    }
+
+
+}
+
+
+
+/* ================================= */
+/* CELULAR */
+/* ================================= */
+
+
+@media(max-width:600px){
+
+
+    .cabecalho {
+
+        min-height: 220px;
+
+        padding: 30px 10px;
+
+        font-size: 14px;
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
 }
