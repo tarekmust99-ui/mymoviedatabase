@@ -222,6 +222,7 @@ a,
 
 
 /* CELULAR */
+/* CELULAR */
 
 @media(max-width:600px){
 
@@ -257,11 +258,14 @@ a,
 
     }
 
+}
+
 
 
 /* REMOVE O BRILHO PRESO NO CELULAR */
 
 @media (hover: none) and (pointer: coarse) {
+
 
     #exportar:hover,
     .show-all:hover,
@@ -270,6 +274,9 @@ a,
         text-shadow: none;
 
     }
+
+
+}
 
 }
 
