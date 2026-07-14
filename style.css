@@ -1,286 +1,219 @@
 body {
-
     background-color: #050505;
-
     color: #ff0000;
-
     font-family: "Courier New", monospace;
-
     margin: 20px;
-
     overflow-x: auto;
-
 }
 
-
-/* CONTAINER */
+/* ===========================
+   CONTAINER
+=========================== */
 
 .container {
-
     max-width: 1200px;
-
-    margin: auto;
-
+    margin: 0 auto;
 }
 
-
-
-
-/* CABEÇALHO / BANNER */
+/* ===========================
+   BANNER
+=========================== */
 
 .cabecalho {
-
-    min-height: 180px;
-
     display: flex;
-
+    justify-content: flex-start;
     align-items: center;
 
-    justify-content: center;
+    min-height: 170px;
 
-    padding: 30px;
-
-    box-sizing: border-box;
-
-    text-align: center;
-
-    color: #ff0000;
-
-    font-family: "Courier New", monospace;
+    padding: 30px 40px;
 
     border: 2px solid #ff0000;
+    border-radius: 6px;
 
-    animation: brilhoBanner 2s infinite;
-
-}
-
-
-
-/* PISCAR DO BANNER */
-
-@keyframes brilhoBanner {
-
-
-    0% {
-
-        opacity: 1;
-
-        text-shadow:
-
-        0 0 5px #ff0000,
-
-        0 0 15px #ff0000;
-
-    }
-
-
-    50% {
-
-        opacity: 0.5;
-
-        text-shadow: none;
-
-    }
-
-
-    100% {
-
-        opacity: 1;
-
-        text-shadow:
-
-        0 0 5px #ff0000,
-
-        0 0 15px #ff0000;
-
-    }
-
-}
-
-
-
-/* TEXTOS */
-
-pre {
-
-    font-family: "Courier New", monospace;
-
-    font-size: 16px;
-
-    white-space: pre;
-
-    overflow-x: auto;
-
-}
-
-
-
-/* FILMES */
-
-#movies {
-
-    white-space: pre;
-
-    overflow-x: auto;
-
-}
-
-
-
-/* PESQUISA */
-
-input {
-
-    background-color: #050505;
-
-    color: #ff0000;
-
-    border: 1px solid #ff0000;
-
-    font-family: "Courier New", monospace;
-
-    font-size: 16px;
-
-    padding: 8px;
-
-    width: 350px;
-
-    max-width: 100%;
+    background: #050505;
 
     box-sizing: border-box;
 
+    text-align: left;
+
+    box-shadow:
+        0 0 10px rgba(255,0,0,.35),
+        inset 0 0 10px rgba(255,0,0,.15);
+
+    animation: neonBanner 2.5s infinite;
 }
 
-
-input::placeholder {
-
-    color: #660000;
-
+.cabecalho pre{
+    margin:0;
+    font-size:30px;
+    line-height:1.2;
+    color:#ff2b2b;
+    font-weight:bold;
+    white-space:pre;
+    overflow-x:auto;
 }
 
+/* ===========================
+   ANIMAÇÃO NEON
+=========================== */
 
+@keyframes neonBanner{
 
-/* ESTRELAS */
+    0%,100%{
 
-.rating-star {
+        text-shadow:
+            0 0 5px #ff0000,
+            0 0 10px #ff0000,
+            0 0 20px #ff0000,
+            0 0 40px #aa0000;
 
+        box-shadow:
+            0 0 10px rgba(255,0,0,.35),
+            inset 0 0 10px rgba(255,0,0,.15);
+    }
+
+    45%{
+
+        text-shadow:
+            0 0 10px #ff0000,
+            0 0 20px #ff0000,
+            0 0 40px #ff0000,
+            0 0 70px #ff0000;
+
+        box-shadow:
+            0 0 18px rgba(255,0,0,.6),
+            inset 0 0 15px rgba(255,0,0,.25);
+    }
+
+    48%{
+        opacity:.75;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    52%{
+        opacity:.82;
+    }
+}
+
+/* ===========================
+   TEXTOS
+=========================== */
+
+pre {
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+#movies {
+    white-space: pre;
+    overflow-x: auto;
+}
+
+/* ===========================
+   PESQUISA
+=========================== */
+
+input {
+    background-color: #050505;
     color: #ff0000;
-
-    cursor: pointer;
-
-    display: inline-block;
-
+    border: 1px solid #ff0000;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    padding: 8px;
+    width: 350px;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
+input::placeholder{
+    color:#770000;
+}
 
-.rating-star:hover {
+/* ===========================
+   ESTRELAS
+=========================== */
+
+.rating-star{
+    color:#ff0000;
+    display:inline-block;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.rating-star:hover{
 
     text-shadow:
-
-    0 0 5px #ff0000,
-
-    0 0 10px #ff0000,
-
-    0 0 20px #ff0000;
-
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000;
 }
 
-
-
-/* BOTÕES */
+/* ===========================
+   BOTÕES
+=========================== */
 
 #exportar,
-.show-all {
-
-    cursor: pointer;
-
+.show-all{
+    cursor:pointer;
 }
-
-
 
 #exportar:hover,
-.show-all:hover {
-
+.show-all:hover{
 
     text-shadow:
-
-    0 0 5px #ff0000,
-
-    0 0 10px #ff0000,
-
-    0 0 20px #ff0000;
-
-
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000;
 }
-
-
-
-/* MÃOZINHA */
 
 button,
 a,
-#exportar,
-.show-all,
-.rating-star {
-
-    cursor: pointer;
-
+.rating-star{
+    cursor:pointer;
 }
 
+/* ===========================
+   CELULAR
+=========================== */
 
+@media (max-width:600px){
 
-/* CELULAR */
-
-@media(max-width:600px){
-
-
-    body {
-
-        margin: 10px;
-
+    body{
+        margin:10px;
     }
 
-
-    .cabecalho {
-
-        min-height: 130px;
-
-        padding: 25px 5px;
-
-        font-size: 13px;
-
+    .cabecalho{
+        padding:20px;
+        min-height:120px;
     }
 
-
-    pre {
-
-        font-size: 12px;
-
+    .cabecalho pre{
+        font-size:20px;
     }
 
-
-    input {
-
-        width: 100%;
-
+    pre{
+        font-size:12px;
     }
 
+    input{
+        width:100%;
+    }
 }
 
+/* Remove hover preso no celular */
 
-
-/* REMOVE HOVER PRESO NO CELULAR */
-
-@media (hover: none) and (pointer: coarse) {
-
+@media (hover:none) and (pointer:coarse){
 
     #exportar:hover,
     .show-all:hover,
-    .rating-star:hover {
-
-        text-shadow: none;
-
+    .rating-star:hover{
+        text-shadow:none;
     }
-
 
 }
