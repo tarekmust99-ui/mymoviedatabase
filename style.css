@@ -141,9 +141,9 @@ input::placeholder {
     color: #660000;
 
 }
-
 /* ================================= */
-/* CADA ESTRELA GIRANDO INDIVIDUALMENTE 3D */
+/* ESTRELAS DO RATING PISCANDO */
+/* MESMO TAMANHO DAS ESTRELAS DOS FILMES */
 /* ================================= */
 
 
@@ -152,60 +152,56 @@ input::placeholder {
 .stars span,
 .filme-star {
 
-
     display: inline-block;
 
     color: #ff0000 !important;
 
-    font-size: 22px;
+    font-size: inherit;
 
-    font-weight: bold;
-
-    transform-style: preserve-3d;
-
-    animation: estrelaIndividual 2.5s linear infinite;
-
-
-    text-shadow:
-
-    1px 1px 0 #800000,
-
-    2px 2px 0 #550000,
-
-    3px 3px 0 #300000,
-
-    0 0 10px #ff0000;
-
+    animation: piscarEstrela 1.2s infinite;
 
 }
 
 
 
-/* cada estrela faz sua própria rotação */
+/* efeito de piscar */
 
-@keyframes estrelaIndividual {
+@keyframes piscarEstrela {
 
 
     0% {
 
-        transform: perspective(400px) rotateY(0deg);
+        opacity: 1;
+
+        text-shadow:
+
+        0 0 5px #ff0000;
 
     }
 
 
     50% {
 
-        transform: perspective(400px) rotateY(180deg);
+        opacity: 0.3;
+
+        text-shadow: none;
 
     }
 
 
     100% {
 
-        transform: perspective(400px) rotateY(360deg);
+        opacity: 1;
+
+        text-shadow:
+
+        0 0 10px #ff0000,
+
+        0 0 20px #ff0000;
 
     }
 
+}
 
 }
 /* ================================= */
