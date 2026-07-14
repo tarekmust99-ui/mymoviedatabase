@@ -42,21 +42,6 @@ body {
         inset 0 0 10px rgba(255,0,0,.15);
 }
 .titulo{
-    animation: piscarTitulo 1.3s infinite;
-}
-
-@keyframes piscarTitulo{
-
-    0%,100%{
-        opacity:1;
-    }
-
-    50%{
-        opacity:.35;
-    }
-
-}
-.titulo{
     font-size:30px;
     line-height:1.2;
     color:#ff2b2b;
