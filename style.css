@@ -54,7 +54,7 @@ body {
         0 0 5px #ff0000,
         0 0 10px #ff0000,
         0 0 20px #ff0000;
-    animation: flicker 1.2s infinite;
+    animation: flicker 3s infinite;
 }
 
 @keyframes flicker{
