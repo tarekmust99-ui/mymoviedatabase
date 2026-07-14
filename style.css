@@ -20,7 +20,7 @@ body {
 =========================== */
 
 .cabecalho {
-    display: flex;
+    display: inline-flex;
     justify-content: flex-start;
     align-items: center;
 
@@ -36,6 +36,10 @@ body {
     box-sizing: border-box;
 
     text-align: left;
+
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
 
     box-shadow:
         0 0 10px rgba(255,0,0,.35),
@@ -157,10 +161,12 @@ a,
     }
 
     .cabecalho{
-        padding:20px;
-        min-height:120px;
-    }
-
+    display:flex;
+    width:100%;
+    padding:18px;
+    min-height:110px;
+    box-sizing:border-box;
+}
    .titulo{
     font-size:24px;
 }
@@ -173,9 +179,10 @@ a,
         font-size:12px;
     }
 
-    input{
-        width:100%;
-    }
+   input{
+    width:90%;
+    max-width:320px;
+ }
 }
 
 /* Remove hover preso no celular */
