@@ -20,6 +20,7 @@ body {
 =========================== */
 
 .cabecalho {
+
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
@@ -37,8 +38,9 @@ body {
 
     text-align: left;
 
-    width: fit-content;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1200px;
+
     margin: 0 auto 20px auto;
 
     box-shadow:
