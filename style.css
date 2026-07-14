@@ -230,4 +230,18 @@ a,
         text-shadow:none;
     }
 
+    #exportar:active,
+    .show-all:active,
+    .rating-star:active{
+
+        text-shadow:
+            0 0 8px #ff0000,
+            0 0 18px #ff0000,
+            0 0 30px #ff0000,
+            0 0 45px #ff0000;
+
+    }
+
+}
+
 }
