@@ -1,4 +1,64 @@
-/* BANNER PRINCIPAL */
+body {
+
+    background-color: #050505;
+
+    color: #ff0000;
+
+    font-family: "Courier New", monospace;
+
+    margin: 20px;
+
+}
+
+
+
+.container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+
+    color: #ff0000;
+
+    font-family: "OCR A Extended", "Courier New", monospace;
+
+    font-size: 22px;
+
+    line-height: 1.2;
+
+    text-shadow:
+
+    3px 3px 0 #800000,
+
+    6px 6px 0 #400000;
+
+}
+
+
+
+/* TEXTOS DO TERMINAL */
+
+pre {
+
+    font-family: "Courier New", monospace;
+
+    font-size: 16px;
+
+    white-space: pre-wrap;
+
+}
+
+
+
+/* BANNER */
 
 .banner {
 
@@ -36,12 +96,9 @@
 
     6px 6px 0 #400000;
 
-
 }
 
 
-
-/* brilho do banner ao passar o mouse */
 
 .banner:hover {
 
@@ -55,9 +112,170 @@
 
 
 
-/* deixa bonito no celular */
+/* PESQUISA */
+
+input {
+
+    background-color: #050505;
+
+    color: #ff0000;
+
+    border: 1px solid #ff0000;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 16px;
+
+    padding: 8px;
+
+    width: 350px;
+
+    max-width: 90%;
+
+}
+
+
+
+input::placeholder {
+
+    color: #660000;
+
+}
+
+
+
+/* ESTRELAS GIRANDO SEM PARAR */
+
+.rating-star {
+
+    cursor: pointer;
+
+    display: inline-block;
+
+    animation: girarEstrela 3s linear infinite;
+
+    color: #ff0000;
+
+}
+
+
+
+.rating-star:hover {
+
+    text-shadow:
+
+    0 0 5px #ff0000,
+
+    0 0 10px #ff0000,
+
+    0 0 20px #ff0000;
+
+}
+
+
+
+@keyframes girarEstrela {
+
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+
+}
+
+
+
+/* BOTÕES */
+
+.show-all {
+
+    cursor:pointer;
+
+}
+
+
+
+.show-all:hover {
+
+
+    text-shadow:
+
+    0 0 5px #ff0000,
+
+    0 0 10px #ff0000;
+
+}
+
+
+
+/* EXPORTAR */
+
+#exportar {
+
+    cursor:pointer;
+
+}
+
+
+
+#exportar:hover {
+
+    text-shadow:
+
+    0 0 5px #ff0000,
+
+    0 0 10px #ff0000;
+
+}
+
+
+
+/* GIF DO GATO */
+
+.gato {
+
+    max-height: 220px;
+
+    width: auto;
+
+}
+
+
+
+/* CELULAR */
 
 @media(max-width:600px){
+
+
+    body {
+
+        margin: 10px;
+
+    }
+
+
+    .cabecalho {
+
+        font-size: 14px;
+
+    }
+
+
+    pre {
+
+        font-size: 13px;
+
+    }
 
 
     .banner {
@@ -67,6 +285,13 @@
         padding: 25px 10px;
 
         font-size: 16px;
+
+    }
+
+
+    input {
+
+        width: 90%;
 
     }
 
