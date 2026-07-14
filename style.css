@@ -29,7 +29,7 @@ body {
     padding: 30px 40px;
 
     border: 2px solid #ff0000;
-    border-radius: 0px;
+    border-radius: 0;
 
     background: #050505;
 
@@ -40,8 +40,8 @@ body {
     box-shadow:
         0 0 10px rgba(255,0,0,.35),
         inset 0 0 10px rgba(255,0,0,.15);
-
-    .titulo{
+}
+.titulo{
     animation: piscarTitulo 1.3s infinite;
 }
 
@@ -56,8 +56,6 @@ body {
     }
 
 }
-}
-
 .cabecalho pre{
     margin:0;
     font-size:30px;
@@ -71,48 +69,6 @@ body {
 /* ===========================
    ANIMAÇÃO NEON
 =========================== */
-
-@keyframes neonBanner{
-
-    0%,100%{
-
-        text-shadow:
-            0 0 5px #ff0000,
-            0 0 10px #ff0000,
-            0 0 20px #ff0000,
-            0 0 40px #aa0000;
-
-        box-shadow:
-            0 0 10px rgba(255,0,0,.35),
-            inset 0 0 10px rgba(255,0,0,.15);
-    }
-
-    45%{
-
-        text-shadow:
-            0 0 10px #ff0000,
-            0 0 20px #ff0000,
-            0 0 40px #ff0000,
-            0 0 70px #ff0000;
-
-        box-shadow:
-            0 0 18px rgba(255,0,0,.6),
-            inset 0 0 15px rgba(255,0,0,.25);
-    }
-
-    48%{
-        opacity:.75;
-    }
-
-    50%{
-        opacity:1;
-    }
-
-    52%{
-        opacity:.82;
-    }
-}
-
 /* ===========================
    TEXTOS
 =========================== */
