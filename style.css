@@ -30,13 +30,7 @@ body {
 
 .cabecalho {
 
-    color: #ff0000;
-
-    font-family: "Courier New", monospace;
-
-    font-size: 18px;
-
-    min-height: 220px;
+    min-height: 140px;
 
     display: flex;
 
@@ -44,18 +38,11 @@ body {
 
     justify-content: center;
 
-    padding: 40px 10px;
-
-    border: 2px solid #ff0000;
+    padding: 20px 10px;
 
     box-sizing: border-box;
 
-    text-align: center;
-
-    animation: brilhoBanner 2s infinite;
-
 }
-
 
 
 /* PISCAR DO BANNER */
