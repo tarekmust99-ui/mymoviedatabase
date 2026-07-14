@@ -46,22 +46,21 @@ body {
     line-height:1.2;
     color:#ff2b2b;
     font-weight:bold;
-    animation: piscarTitulo 1.3s infinite;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0000,
+        0 0 20px #ff0000;
+    animation: flicker 1.2s infinite;
 }
 
-.subtitulo{
-    font-size:18px;
-    color:#ff2b2b;
-    margin-top:4px;
-}
-@keyframes piscarTitulo {
+@keyframes flicker{
 
-    0%,100%{
+    0%,18%,22%,25%,53%,57%,100%{
         opacity:1;
     }
 
-    50%{
-        opacity:.35;
+    20%,24%,55%{
+        opacity:.15;
     }
 
 }
