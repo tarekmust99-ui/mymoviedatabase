@@ -208,6 +208,95 @@ input::placeholder {
 
 
 }
+/* ================================= */
+/* VOLTA AO TAMANHO ORIGINAL DO TERMINAL */
+/* ================================= */
 
+
+body {
+
+    margin: 20px;
+
+    overflow-x: hidden;
+
+}
+
+
+
+/* cabeçalho */
+
+.cabecalho {
+
+    font-family: "Courier New", monospace;
+
+    font-size: 18px;
+
+    color: #ff0000;
+
+    white-space: pre;
+
+    overflow-x: auto;
+
+    text-shadow: none;
+
+}
+
+
+
+/* textos do banco */
+
+pre {
+
+    font-family: "Courier New", monospace;
+
+    font-size: 16px;
+
+    white-space: pre;
+
+    overflow-x: auto;
+
+}
+
+
+
+/* evita quebra das linhas dos filmes */
+
+#movies {
+
+    white-space: pre;
+
+    overflow-x: auto;
+
+}
+
+
+
+/* celular */
+
+@media(max-width:600px){
+
+
+    body {
+
+        margin: 10px;
+
+    }
+
+
+    .cabecalho {
+
+        font-size: 13px;
+
+    }
+
+
+    pre {
+
+        font-size: 12px;
+
+    }
+
+
+}
 
 }
