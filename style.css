@@ -1,40 +1,34 @@
-body {
+/* BANNER PRINCIPAL */
+
+.banner {
+
+    width: 100%;
+
+    min-height: 220px;
 
     background-color: #050505;
 
-    color: #ff0000;
+    border: 2px solid #ff0000;
 
-    font-family: "Courier New", monospace;
+    box-sizing: border-box;
 
-    margin: 20px;
+    display: flex;
 
-}
+    align-items: center;
 
+    justify-content: center;
 
+    padding: 40px 20px;
 
-/* controla o tamanho geral */
-
-.container {
-
-    max-width: 1200px;
-
-    margin: auto;
-
-}
-
-
-
-/* TITULO DO SITE */
-
-.cabecalho {
-
-    color: #ff0000;
+    margin-bottom: 30px;
 
     font-family: "OCR A Extended", "Courier New", monospace;
 
-    font-size: 20px;
+    color: #ff0000;
 
-    line-height: 1.2;
+    font-size: 26px;
+
+    text-align: center;
 
     text-shadow:
 
@@ -42,250 +36,37 @@ body {
 
     6px 6px 0 #400000;
 
-}
-
-
-
-/* textos do banco */
-
-pre {
-
-    font-family: "Courier New", monospace;
-
-    font-size: 16px;
-
-    white-space: pre-wrap;
 
 }
 
 
 
-/* caixa de pesquisa */
-
-input {
-
-
-    background-color: #050505;
-
-
-    color: #ff0000;
-
-
-    border: 1px solid #ff0000;
-
-
-    font-family: "Courier New", monospace;
-
-
-    font-size: 16px;
-
-
-    padding: 8px;
-
-
-    width: 350px;
-
-
-    max-width: 90%;
-
-
-}
-
-
-
-input::placeholder {
-
-
-    color: #660000;
-
-
-}
-
-
-
-/* estrelas de avaliação */
-
-.rating-star {
-
-    cursor: pointer;
-
-}
-
-
-
-.rating-star:hover {
-
-
-    text-shadow:
-
-
-    0 0 5px #ff0000,
-
-
-    0 0 10px #ff0000,
-
-
-    0 0 20px #ff0000;
-
-
-}
-
-
-
-/* mostrar todos */
-
-.show-all {
-
-    cursor:pointer;
-
-}
-
-
-
-.show-all:hover {
-
-
-    text-shadow:
-
-
-    0 0 5px #ff0000,
-
-
-    0 0 10px #ff0000;
-
-
-}
-
-
-
-/* exportar banco */
-
-#exportar {
-
-    cursor:pointer;
-
-}
-
-
-
-#exportar:hover {
-
-
-    text-shadow:
-
-
-    0 0 5px #ff0000,
-
-
-    0 0 10px #ff0000;
-
-
-}
-
-
-
-/* ANIMAÇÃO DO BANNER - TREMEDEIRA */
+/* brilho do banner ao passar o mouse */
 
 .banner:hover {
 
+    box-shadow:
 
-    animation: terremoto 0.25s infinite;
+    0 0 10px #ff0000,
 
-
-}
-
-
-
-@keyframes terremoto {
-
-
-    0% {
-
-        transform: translate(0);
-
-    }
-
-
-    25% {
-
-        transform: translate(-5px, 2px);
-
-    }
-
-
-    50% {
-
-        transform: translate(5px, -2px);
-
-    }
-
-
-    75% {
-
-        transform: translate(-5px, -2px);
-
-    }
-
-
-    100% {
-
-        transform: translate(0);
-
-    }
-
+    0 0 25px #ff0000;
 
 }
 
 
 
-/* GIF DO GATO */
-
-.gato {
-
-
-    display: block;
-
-    max-height: 120px;
-
-    width: auto;
-
-}
-
-
-
-/* CELULAR */
+/* deixa bonito no celular */
 
 @media(max-width:600px){
 
 
-    body {
+    .banner {
 
-        margin: 10px;
+        min-height: 160px;
 
-    }
+        padding: 25px 10px;
 
-
-    .cabecalho {
-
-        font-size: 14px;
-
-        text-shadow:
-
-        2px 2px 0 #800000;
-
-    }
-
-
-    pre {
-
-        font-size: 13px;
-
-    }
-
-
-    input {
-
-        width: 90%;
+        font-size: 16px;
 
     }
 
