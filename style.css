@@ -13,8 +13,7 @@ body {
 }
 
 
-
-/* CONTAINER PRINCIPAL */
+/* CONTAINER */
 
 .container {
 
@@ -30,11 +29,11 @@ body {
 
 .cabecalho {
 
-    min-height: 140px;
+    min-height: 160px;
 
     display: block;
 
-    padding: 20px 10px;
+    padding: 35px 10px;
 
     box-sizing: border-box;
 
@@ -44,7 +43,10 @@ body {
 
     font-family: "Courier New", monospace;
 
+    animation: brilhoBanner 2s infinite;
+
 }
+
 
 
 /* PISCAR DO BANNER */
@@ -143,7 +145,6 @@ input {
 }
 
 
-
 input::placeholder {
 
     color: #660000;
@@ -165,7 +166,6 @@ input::placeholder {
 }
 
 
-
 .rating-star:hover {
 
     text-shadow:
@@ -180,8 +180,7 @@ input::placeholder {
 
 
 
-/* BOTÕES CLICÁVEIS */
-
+/* BOTÕES */
 
 #exportar,
 .show-all {
@@ -209,7 +208,7 @@ input::placeholder {
 
 
 
-/* GARANTIR MÃOZINHA */
+/* MÃOZINHA */
 
 button,
 a,
@@ -224,7 +223,6 @@ a,
 
 
 /* CELULAR */
-/* CELULAR */
 
 @media(max-width:600px){
 
@@ -238,11 +236,11 @@ a,
 
     .cabecalho {
 
-        min-height: 120px;
-
-        font-size: 13px;
+        min-height: 130px;
 
         padding: 25px 5px;
+
+        font-size: 13px;
 
     }
 
@@ -264,7 +262,7 @@ a,
 
 
 
-/* REMOVE O BRILHO PRESO NO CELULAR */
+/* REMOVE HOVER PRESO NO CELULAR */
 
 @media (hover: none) and (pointer: coarse) {
 
@@ -274,26 +272,8 @@ a,
     .rating-star:hover {
 
         text-shadow: none;
+
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 }
