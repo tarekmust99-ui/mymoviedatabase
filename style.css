@@ -6,162 +6,163 @@ body {
 
     font-family: "Courier New", monospace;
 
-    margin: 40px;
+    margin: 20px;
 
 }
 
 
+/* controla a largura geral do site */
+
+.container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
+/* cabeçalho */
 
 .cabecalho {
 
     color: #ff0000;
 
+    font-size: 20px;
+
+    line-height: 1.2;
+
 }
 
 
+
+/* todos os textos */
 
 pre {
 
     font-family: "Courier New", monospace;
 
-    font-size: 18px;
+    font-size: 16px;
+
+    white-space: pre-wrap;
 
 }
 
 
 
+/* campo de pesquisa */
 
 input {
 
-
     background-color: #050505;
-
 
     color: #ff0000;
 
-
     border: 1px solid #ff0000;
-
 
     font-family: "Courier New", monospace;
 
-
-    font-size: 18px;
-
+    font-size: 16px;
 
     padding: 8px;
 
-
     width: 350px;
 
-
+    max-width: 90%;
 
 }
-
 
 
 
 input::placeholder {
 
-
     color: #660000;
-
 
 }
 
 
 
-
-
+/* estrelas */
 
 .rating-star {
 
-
-    cursor:pointer;
-
+    cursor: pointer;
 
 }
-
-
-
 
 
 .rating-star:hover {
 
-
     text-shadow:
-
-
     0 0 5px #ff0000,
-
-
     0 0 10px #ff0000,
-
-
     0 0 20px #ff0000;
-
-
 
 }
 
 
 
-
+/* mostrar todos */
 
 .show-all {
 
-
     cursor:pointer;
 
-
 }
-
-
-
 
 
 .show-all:hover {
 
-
     text-shadow:
-
-
     0 0 5px #ff0000,
-
-
     0 0 10px #ff0000;
-
-
 
 }
 
 
 
-
+/* exportar */
 
 #exportar {
 
-
     cursor:pointer;
 
-
 }
-
-
-
 
 
 #exportar:hover {
 
-
     text-shadow:
-
-
     0 0 5px #ff0000,
-
-
     0 0 10px #ff0000;
 
+}
 
+
+
+/* celular */
+
+@media(max-width:600px){
+
+    body {
+
+        margin: 10px;
+
+    }
+
+
+    pre {
+
+        font-size: 13px;
+
+    }
+
+
+    .cabecalho {
+
+        font-size: 14px;
+
+    }
 
 }
