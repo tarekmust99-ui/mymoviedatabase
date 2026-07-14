@@ -1,42 +1,12 @@
 body {
 
-    background-color:#050505;
-    color:#ff0000;
-    font-family:"Courier New", monospace;
-    margin:40px;
+    background-color: #050505;
 
-}
+    color: #ff0000;
 
+    font-family: "Courier New", monospace;
 
-/* ========================= */
-/* BANNER */
-/* ========================= */
-
-.banner {
-
-    position:relative;
-    display:inline-block;
-
-    padding:35px 45px;
-
-    border:1px solid #ff0000;
-
-    box-shadow:
-    0 0 10px rgba(255,0,0,.35),
-    0 0 25px rgba(255,0,0,.20);
-
-    margin-bottom:35px;
-
-    overflow:visible;
-
-}
-
-
-.banner:hover {
-
-    box-shadow:
-    0 0 15px #ff0000,
-    0 0 40px rgba(255,0,0,.45);
+    margin: 40px;
 
 }
 
@@ -44,220 +14,154 @@ body {
 
 .cabecalho {
 
-    color:#ff0000;
-
-    margin:0;
+    color: #ff0000;
 
 }
 
-
-
-/* ========================= */
-/* ASCII DO BANNER */
-/* ========================= */
 
 
 pre {
 
-    font-family:"Courier New", monospace;
+    font-family: "Courier New", monospace;
 
-    font-size:10px;
-
-    line-height:1;
-
-    margin:0;
+    font-size: 18px;
 
 }
 
 
-
-/* ========================= */
-/* GATO */
-/* ========================= */
-
-
-.banner-gif {
-
-    position:absolute;
-
-    right:-140px;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    height:280px;
-
-    width:auto;
-
-    pointer-events:none;
-
-    filter:
-    drop-shadow(0 0 20px rgba(255,0,0,.8));
-
-    animation:catFloat 3s ease-in-out infinite;
-
-}
-
-
-
-@keyframes catFloat {
-
-
-0% {
-
-transform:translateY(-50%) translateX(0);
-
-}
-
-
-50% {
-
-transform:translateY(calc(-50% - 8px)) translateX(5px);
-
-}
-
-
-100% {
-
-transform:translateY(-50%) translateX(0);
-
-}
-
-
-}
-
-
-
-/* ========================= */
-/* INPUT */
-/* ========================= */
 
 
 input {
 
-    background-color:#050505;
 
-    color:#ff0000;
+    background-color: #050505;
 
-    border:1px solid #ff0000;
 
-    font-family:"Courier New", monospace;
+    color: #ff0000;
 
-    font-size:18px;
 
-    padding:8px;
+    border: 1px solid #ff0000;
 
-    width:350px;
+
+    font-family: "Courier New", monospace;
+
+
+    font-size: 18px;
+
+
+    padding: 8px;
+
+
+    width: 350px;
+
+
 
 }
+
+
 
 
 input::placeholder {
 
-    color:#660000;
+
+    color: #660000;
+
 
 }
 
 
 
-/* ========================= */
-/* EFEITOS */
-/* ========================= */
+
 
 
 .rating-star {
 
+
     cursor:pointer;
 
+
 }
+
+
+
 
 
 .rating-star:hover {
 
+
     text-shadow:
+
+
     0 0 5px #ff0000,
+
+
     0 0 10px #ff0000,
+
+
     0 0 20px #ff0000;
 
+
+
 }
+
+
 
 
 
 .show-all {
 
+
     cursor:pointer;
 
+
 }
+
+
+
 
 
 .show-all:hover {
 
+
     text-shadow:
+
+
     0 0 5px #ff0000,
+
+
     0 0 10px #ff0000;
 
+
+
 }
+
+
 
 
 
 #exportar {
 
+
     cursor:pointer;
 
+
 }
+
+
+
 
 
 #exportar:hover {
 
+
     text-shadow:
+
+
     0 0 5px #ff0000,
+
+
     0 0 10px #ff0000;
 
-}
-
-
-
-/* ========================= */
-/* CELULAR */
-/* ========================= */
-
-
-@media(max-width:700px){
-
-
-body {
-
-    margin:15px;
-
-}
-
-
-.banner {
-
-    display:block;
-
-    padding-bottom:130px;
-
-}
-
-
-
-.banner-gif {
-
-    right:10px;
-
-    height:170px;
-
-}
-
-
-
-pre {
-
-    font-size:6px;
-
-}
 
 
 }
