@@ -1,167 +1,181 @@
 body {
 
     background-color: #050505;
-
     color: #ff0000;
-
     font-family: "Courier New", monospace;
-
     margin: 40px;
 
 }
 
+/* ========================= */
+/* BANNER */
+/* ========================= */
 
+.banner{
 
-.cabecalho {
+    position:relative;
+    display:inline-block;
 
-    color: #ff0000;
+    padding:20px 35px;
+
+    border:1px solid #ff0000;
+
+    box-shadow:
+        0 0 8px rgba(255,0,0,.30),
+        0 0 18px rgba(255,0,0,.15);
+
+    margin-bottom:35px;
+
+    overflow:visible;
+
+    transition:.3s;
 
 }
 
+.banner:hover{
 
+    box-shadow:
+        0 0 10px #ff0000,
+        0 0 30px rgba(255,0,0,.35);
+
+}
+
+.cabecalho{
+
+    color:#ff0000;
+    margin:0;
+
+}
+
+.banner-gif{
+
+    position:absolute;
+
+    right:-70px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    height:145px;
+
+    width:auto;
+
+    pointer-events:none;
+
+    filter:drop-shadow(0 0 15px rgba(255,0,0,.6));
+
+    animation:catFloat 3s ease-in-out infinite;
+
+}
+
+@keyframes catFloat{
+
+0%{
+
+transform:translateY(-50%) translateX(0);
+
+}
+
+50%{
+
+transform:translateY(calc(-50% - 5px)) translateX(3px);
+
+}
+
+100%{
+
+transform:translateY(-50%) translateX(0);
+
+}
+
+}
 
 pre {
 
     font-family: "Courier New", monospace;
-
     font-size: 18px;
 
 }
-
-
-
 
 input {
 
-
-    background-color: #050505;
-
-
-    color: #ff0000;
-
-
-    border: 1px solid #ff0000;
-
-
-    font-family: "Courier New", monospace;
-
-
-    font-size: 18px;
-
-
-    padding: 8px;
-
-
-    width: 350px;
-
-
+    background-color:#050505;
+    color:#ff0000;
+    border:1px solid #ff0000;
+    font-family:"Courier New", monospace;
+    font-size:18px;
+    padding:8px;
+    width:350px;
 
 }
 
+input::placeholder{
 
-
-
-input::placeholder {
-
-
-    color: #660000;
-
+    color:#660000;
 
 }
 
-
-
-
-
-
-.rating-star {
-
+.rating-star{
 
     cursor:pointer;
 
-
 }
 
-
-
-
-
-.rating-star:hover {
-
+.rating-star:hover{
 
     text-shadow:
-
-
     0 0 5px #ff0000,
-
-
     0 0 10px #ff0000,
-
-
     0 0 20px #ff0000;
 
-
-
 }
 
-
-
-
-
-.show-all {
-
+.show-all{
 
     cursor:pointer;
 
-
 }
 
-
-
-
-
-.show-all:hover {
-
+.show-all:hover{
 
     text-shadow:
-
-
     0 0 5px #ff0000,
-
-
     0 0 10px #ff0000;
-
-
 
 }
 
-
-
-
-
-#exportar {
-
+#exportar{
 
     cursor:pointer;
 
+}
+
+#exportar:hover{
+
+    text-shadow:
+    0 0 5px #ff0000,
+    0 0 10px #ff0000;
 
 }
 
+@media(max-width:700px){
 
+.banner{
 
+display:block;
+padding-bottom:90px;
 
+}
 
-#exportar:hover {
+.banner-gif{
 
+height:90px;
+right:10px;
+bottom:-15px;
+top:auto;
+transform:none;
 
-    text-shadow:
-
-
-    0 0 5px #ff0000,
-
-
-    0 0 10px #ff0000;
-
-
+}
 
 }
