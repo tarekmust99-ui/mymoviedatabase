@@ -25,23 +25,30 @@ body {
 
 
 
+
 /* CABEÇALHO / BANNER */
 
 .cabecalho {
 
-    min-height: 160px;
+    min-height: 180px;
 
-    display: block;
+    display: flex;
 
-    padding: 35px 10px;
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
 
     box-sizing: border-box;
 
-    text-align: left;
+    text-align: center;
 
     color: #ff0000;
 
     font-family: "Courier New", monospace;
+
+    border: 2px solid #ff0000;
 
     animation: brilhoBanner 2s infinite;
 
