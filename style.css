@@ -257,4 +257,39 @@ a,
 
     }
 
+
+
+/* REMOVE O BRILHO PRESO NO CELULAR */
+
+@media (hover: none) and (pointer: coarse) {
+
+    #exportar:hover,
+    .show-all:hover,
+    .rating-star:hover {
+
+        text-shadow: none;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
