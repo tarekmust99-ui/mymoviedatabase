@@ -56,14 +56,18 @@ body {
     }
 
 }
-.cabecalho pre{
-    margin:0;
+.titulo{
     font-size:30px;
     line-height:1.2;
     color:#ff2b2b;
     font-weight:bold;
-    white-space:pre;
-    overflow-x:auto;
+    animation: piscarTitulo 1.3s infinite;
+}
+
+.subtitulo{
+    font-size:18px;
+    color:#ff2b2b;
+    margin-top:4px;
 }
 
 /* ===========================
@@ -198,5 +202,4 @@ a,
 
     }
 
-}
 
