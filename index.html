@@ -11,22 +11,33 @@
 
 <body>
 
-<div class="cabecalho">
-    <div class="titulo">my_movie_database</div>
-    <div class="subtitulo">by: tmo</div>
+<div class="container">
+
+    <div class="cabecalho">
+        <div class="texto-banner">
+            <div class="titulo">my_movie_database</div>
+            <div class="subtitulo">by: tmo</div>
+        </div>
+    </div>
+
+    <pre id="contador"></pre>
+
+    <pre id="estatisticas"></pre>
+
+    <pre><span id="exportar">> EXPORT DATABASE</span></pre>
+
+    <pre>> SEARCH DATABASE:</pre>
+
+    <input
+        type="text"
+        id="busca"
+        placeholder="TYPE FILM NAME..."
+        autocomplete="off"
+    >
+
+    <div id="movies"></div>
+
 </div>
-
-<pre id="contador"></pre>
-
-<pre id="estatisticas"></pre>
-
-<pre><span id="exportar">> EXPORT DATABASE</span></pre>
-
-<pre>> SEARCH DATABASE:</pre>
-
-<input type="text" id="busca" placeholder="TYPE FILM NAME...">
-
-<div id="movies"></div>
 
 <script src="script.js"></script>
 
