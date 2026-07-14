@@ -167,11 +167,11 @@ a,
         margin:10px;
     }
 
-    .cabecalho{
+   .cabecalho{
     display:flex;
     width:100%;
-    padding:18px;
-    min-height:110px;
+    padding:30px 40px;
+    min-height:170px;
     box-sizing:border-box;
 }
    .titulo{
