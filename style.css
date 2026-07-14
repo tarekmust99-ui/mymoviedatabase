@@ -294,6 +294,141 @@ input::placeholder {
         width: 90%;
 
     }
+/* ============================= */
+/* ESTRELAS GIRANDO SEM PARAR */
+/* ============================= */
 
+
+.rating-star,
+.star,
+.stars span,
+.filme-star {
+
+    display: inline-block;
+
+    animation: girarEstrela 3s linear infinite;
+
+    color: #ff0000 !important;
+
+}
+
+
+
+/* rotação */
+
+@keyframes girarEstrela {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+
+
+/* brilho */
+
+.rating-star:hover,
+.star:hover,
+.stars span:hover,
+.filme-star:hover {
+
+    text-shadow:
+
+    0 0 5px #ff0000,
+
+    0 0 10px #ff0000,
+
+    0 0 20px #ff0000;
+
+}
+
+
+
+/* ============================= */
+/* BANNER MAIOR */
+/* ============================= */
+
+
+.banner {
+
+    min-height: 220px;
+
+    width: 100%;
+
+    border: 2px solid #ff0000;
+
+    padding: 40px 20px;
+
+    box-sizing: border-box;
+
+    color: #ff0000;
+
+    background-color: #050505;
+
+}
+
+
+
+/* brilho do banner */
+
+.banner:hover {
+
+    box-shadow:
+
+    0 0 10px #ff0000,
+
+    0 0 25px #ff0000;
+
+}
+
+
+
+/* ============================= */
+/* TITULO COM EFEITO 3D */
+/* ============================= */
+
+
+.cabecalho {
+
+    color: #ff0000;
+
+    text-shadow:
+
+    3px 3px 0 #800000,
+
+    6px 6px 0 #400000;
+
+}
+
+
+
+/* ============================= */
+/* CELULAR */
+/* ============================= */
+
+
+@media(max-width:600px) {
+
+
+    .banner {
+
+        min-height: 160px;
+
+        padding: 25px 10px;
+
+    }
+
+
+}
 
 }
