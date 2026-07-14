@@ -294,5 +294,117 @@ pre {
 
 
 }
+/* ================================= */
+/* AUMENTAR ALTURA DO BANNER */
+/* ================================= */
 
+.banner {
+
+    min-height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+
+/* ================================= */
+/* TEXTO DO BANNER PISCANDO */
+/* ================================= */
+
+.banner {
+
+    animation: brilhoBanner 1.5s infinite;
+
+}
+
+
+
+@keyframes brilhoBanner {
+
+
+    0% {
+
+        text-shadow:
+
+        0 0 5px #ff0000;
+
+    }
+
+
+    50% {
+
+        text-shadow: none;
+
+        opacity: 0.5;
+
+    }
+
+
+    100% {
+
+        text-shadow:
+
+        0 0 10px #ff0000,
+
+        0 0 20px #ff0000;
+
+    }
+
+}
+
+
+
+/* ================================= */
+/* VOLTAR EFEITO DOS CLICÁVEIS */
+/* ================================= */
+
+
+#exportar,
+.show-all,
+.rating-star {
+
+    cursor: pointer;
+
+}
+
+
+
+#exportar:hover,
+.show-all:hover,
+.rating-star:hover {
+
+
+    text-shadow:
+
+    0 0 5px #ff0000,
+
+    0 0 10px #ff0000,
+
+    0 0 20px #ff0000;
+
+
+}
+
+
+
+/* ================================= */
+/* GARANTIR MAOZINHA NOS CLIQUES */
+/* ================================= */
+
+
+button,
+a,
+span,
+#exportar,
+.show-all,
+.rating-star {
+
+    cursor: pointer;
+
+}
 }
