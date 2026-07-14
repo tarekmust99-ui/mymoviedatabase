@@ -8,9 +8,13 @@ body {
 
     margin: 20px;
 
+    overflow-x: auto;
+
 }
 
 
+
+/* CONTAINER PRINCIPAL */
 
 .container {
 
@@ -22,55 +26,17 @@ body {
 
 
 
-/* CABEÇALHO */
+/* CABEÇALHO / BANNER */
 
 .cabecalho {
 
     color: #ff0000;
 
-    font-family: "OCR A Extended", "Courier New", monospace;
-
-    font-size: 22px;
-
-    line-height: 1.2;
-
-    text-shadow:
-
-    3px 3px 0 #800000,
-
-    6px 6px 0 #400000;
-
-}
-
-
-
-/* TEXTOS DO TERMINAL */
-
-pre {
-
     font-family: "Courier New", monospace;
 
-    font-size: 16px;
-
-    white-space: pre-wrap;
-
-}
-
-
-
-/* BANNER */
-
-.banner {
-
-    width: 100%;
+    font-size: 18px;
 
     min-height: 220px;
-
-    background-color: #050505;
-
-    border: 2px solid #ff0000;
-
-    box-sizing: border-box;
 
     display: flex;
 
@@ -78,35 +44,86 @@ pre {
 
     justify-content: center;
 
-    padding: 40px 20px;
+    padding: 40px 10px;
 
-    margin-bottom: 30px;
+    border: 2px solid #ff0000;
 
-    font-family: "OCR A Extended", "Courier New", monospace;
-
-    color: #ff0000;
-
-    font-size: 26px;
+    box-sizing: border-box;
 
     text-align: center;
 
-    text-shadow:
-
-    3px 3px 0 #800000,
-
-    6px 6px 0 #400000;
+    animation: brilhoBanner 2s infinite;
 
 }
 
 
 
-.banner:hover {
+/* PISCAR DO BANNER */
 
-    box-shadow:
+@keyframes brilhoBanner {
 
-    0 0 10px #ff0000,
 
-    0 0 25px #ff0000;
+    0% {
+
+        opacity: 1;
+
+        text-shadow:
+
+        0 0 5px #ff0000,
+
+        0 0 15px #ff0000;
+
+    }
+
+
+    50% {
+
+        opacity: 0.5;
+
+        text-shadow: none;
+
+    }
+
+
+    100% {
+
+        opacity: 1;
+
+        text-shadow:
+
+        0 0 5px #ff0000,
+
+        0 0 15px #ff0000;
+
+    }
+
+}
+
+
+
+/* TEXTOS */
+
+pre {
+
+    font-family: "Courier New", monospace;
+
+    font-size: 16px;
+
+    white-space: pre;
+
+    overflow-x: auto;
+
+}
+
+
+
+/* FILMES */
+
+#movies {
+
+    white-space: pre;
+
+    overflow-x: auto;
 
 }
 
@@ -130,7 +147,9 @@ input {
 
     width: 350px;
 
-    max-width: 90%;
+    max-width: 100%;
+
+    box-sizing: border-box;
 
 }
 
@@ -141,133 +160,81 @@ input::placeholder {
     color: #660000;
 
 }
-/* ================================= */
-/* ESTRELAS DO RATING PISCANDO */
-/* MESMO TAMANHO DAS ESTRELAS DOS FILMES */
-/* ================================= */
-
-
-.rating-star,
-.star,
-.stars span,
-.filme-star {
-
-    display: inline-block;
-
-    color: #ff0000 !important;
-
-    font-size: inherit;
-
-    animation: piscarEstrela 1.2s infinite;
-
-}
 
 
 
-/* efeito de piscar */
+/* ESTRELAS */
 
-@keyframes piscarEstrela {
-
-
-    0% {
-
-        opacity: 1;
-
-        text-shadow:
-
-        0 0 5px #ff0000;
-
-    }
-
-
-    50% {
-
-        opacity: 0.3;
-
-        text-shadow: none;
-
-    }
-
-
-    100% {
-
-        opacity: 1;
-
-        text-shadow:
-
-        0 0 10px #ff0000,
-
-        0 0 20px #ff0000;
-
-    }
-
-}
-
-}
-/* ================================= */
-/* VOLTA AO TAMANHO ORIGINAL DO TERMINAL */
-/* ================================= */
-
-
-body {
-
-    margin: 20px;
-
-    overflow-x: hidden;
-
-}
-
-
-
-/* cabeçalho */
-
-.cabecalho {
-
-    font-family: "Courier New", monospace;
-
-    font-size: 18px;
+.rating-star {
 
     color: #ff0000;
 
-    white-space: pre;
+    cursor: pointer;
 
-    overflow-x: auto;
-
-    text-shadow: none;
+    display: inline-block;
 
 }
 
 
 
-/* textos do banco */
+.rating-star:hover {
 
-pre {
+    text-shadow:
 
-    font-family: "Courier New", monospace;
+    0 0 5px #ff0000,
 
-    font-size: 16px;
+    0 0 10px #ff0000,
 
-    white-space: pre;
-
-    overflow-x: auto;
+    0 0 20px #ff0000;
 
 }
 
 
 
-/* evita quebra das linhas dos filmes */
+/* BOTÕES CLICÁVEIS */
 
-#movies {
 
-    white-space: pre;
+#exportar,
+.show-all {
 
-    overflow-x: auto;
+    cursor: pointer;
 
 }
 
 
 
-/* celular */
+#exportar:hover,
+.show-all:hover {
+
+
+    text-shadow:
+
+    0 0 5px #ff0000,
+
+    0 0 10px #ff0000,
+
+    0 0 20px #ff0000;
+
+
+}
+
+
+
+/* GARANTIR MÃOZINHA */
+
+button,
+a,
+#exportar,
+.show-all,
+.rating-star {
+
+    cursor: pointer;
+
+}
+
+
+
+/* CELULAR */
 
 @media(max-width:600px){
 
@@ -281,7 +248,11 @@ pre {
 
     .cabecalho {
 
+        min-height: 180px;
+
         font-size: 13px;
+
+        padding: 25px 5px;
 
     }
 
@@ -293,299 +264,10 @@ pre {
     }
 
 
-}
-/* ================================= */
-/* AUMENTAR ALTURA DO BANNER */
-/* ================================= */
-
-.banner {
-
-    min-height: 260px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-}
-
-
-
-/* ================================= */
-/* TEXTO DO BANNER PISCANDO */
-/* ================================= */
-
-.banner {
-
-    animation: brilhoBanner 1.5s infinite;
-
-}
-
-
-
-@keyframes brilhoBanner {
-
-
-    0% {
-
-        text-shadow:
-
-        0 0 5px #ff0000;
-
-    }
-
-
-    50% {
-
-        text-shadow: none;
-
-        opacity: 0.5;
-
-    }
-
-
-    100% {
-
-        text-shadow:
-
-        0 0 10px #ff0000,
-
-        0 0 20px #ff0000;
-
-    }
-
-}
-
-
-
-/* ================================= */
-/* VOLTAR EFEITO DOS CLICÁVEIS */
-/* ================================= */
-
-
-#exportar,
-.show-all,
-.rating-star {
-
-    cursor: pointer;
-
-}
-
-
-
-#exportar:hover,
-.show-all:hover,
-.rating-star:hover {
-
-
-    text-shadow:
-
-    0 0 5px #ff0000,
-
-    0 0 10px #ff0000,
-
-    0 0 20px #ff0000;
-
-
-}
-
-
-
-/* ================================= */
-/* GARANTIR MAOZINHA NOS CLIQUES */
-/* ================================= */
-
-
-button,
-a,
-span,
-#exportar,
-.show-all,
-.rating-star {
-
-    cursor: pointer;
-
-}
-/* ================================= */
-/* AJUSTAR BARRA DE PESQUISA NO CELULAR */
-/* ================================= */
-
-
-input {
-
-    box-sizing: border-box;
-
-}
-
-
-
-@media(max-width:600px){
-
-
     input {
 
         width: 100%;
 
-        max-width: 100%;
-
     }
-
-
-}
-
-/* ================================= */
-/* DESLIGAR ESTRELAS PISCANDO */
-/* VOLTAR BRILHO APENAS AO PASSAR MOUSE */
-/* ================================= */
-
-
-.rating-star,
-.star,
-.stars span,
-.filme-star {
-
-    animation: none !important;
-
-    opacity: 1;
-
-    color: #ff0000 !important;
-
-    text-shadow: none;
-
-}
-
-
-
-/* brilho ao passar o mouse */
-
-.rating-star:hover,
-.star:hover,
-.stars span:hover,
-.filme-star:hover {
-
-    text-shadow:
-
-    0 0 5px #ff0000,
-
-    0 0 10px #ff0000,
-
-    0 0 20px #ff0000;
-
-}
-
-
-/* ================================= */
-/* BANNER MAIOR */
-/* ================================= */
-
-
-.cabecalho {
-
-    min-height: 280px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    box-sizing: border-box;
-
-    padding: 50px 20px;
-
-    font-size: 22px;
-
-    color: #ff0000;
-
-    border: 2px solid #ff0000;
-
-}
-
-
-
-/* ================================= */
-/* TEXTO DO CABEÇALHO PISCANDO */
-/* ================================= */
-
-
-.cabecalho {
-
-    animation: piscarBanner 1.5s infinite;
-
-}
-
-
-
-@keyframes piscarBanner {
-
-
-    0% {
-
-        opacity: 1;
-
-        text-shadow:
-
-        0 0 5px #ff0000,
-
-        0 0 15px #ff0000;
-
-    }
-
-
-    50% {
-
-        opacity: 0.4;
-
-        text-shadow: none;
-
-    }
-
-
-    100% {
-
-        opacity: 1;
-
-        text-shadow:
-
-        0 0 5px #ff0000,
-
-        0 0 15px #ff0000;
-
-    }
-
-
-}
-
-
-
-/* ================================= */
-/* CELULAR */
-/* ================================= */
-
-
-@media(max-width:600px){
-
-
-    .cabecalho {
-
-        min-height: 220px;
-
-        padding: 30px 10px;
-
-        font-size: 14px;
-
-    }
-
-
-}
-
-
-
-
-
-
-
-
 
 }
